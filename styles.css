@@ -1,0 +1,108 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url("https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?cs=srgb&dl=pexels-jplenio-1103970.jpg&fm=jpg");
+ background-size: cover;
+            /* Ensures the image covers the entire body */
+            background-position: center;
+            /* Ensures the image is centered */
+            background-repeat: no-repeat;
+            /* Prevents repeating the image */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+    }
+
+    /* Form Container */
+    .form-container {
+        background: #ffffff5b;
+        padding: 30px 40px;
+        border-radius: 12px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+    }
+
+    /* Form Title */
+    .form-container h1 {
+        color: #000000;
+        margin-bottom: 20px;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    /* Form Styling */
+    .styled-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Form Group Styling */
+    .form-group {
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .form-group label {
+        display: block;
+        font-size: 17px;
+        color: #070707;
+        margin-bottom: 8px;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        font-size: 14px;
+        transition: border-color 0.3s ease;
+        background: #f9f9f9;
+    }
+
+    .form-group input:focus {
+        border-color: #ff6b6b;
+        outline: none;
+        background: #ffffff;
+    }
+
+    /* Submit Button Styling */
+    .submit-btn {
+        background-color: #4CAF50;
+        color: #fff;
+        font-size: 16px;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .submit-btn:hover {
+        background-color: #45a049;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 500px) {
+        .form-container {
+            padding: 20px;
+            width: 90%;
+        }
+
+        .form-container h1 {
+            font-size: 24px;
+        }
+
+        .form-group input {
+            font-size: 16px;
+            padding: 10px;
+        }
+
+        .submit-btn {
+            font-size: 14px;
+            padding: 10px 15px;
+        }
+    }
